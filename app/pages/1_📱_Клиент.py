@@ -35,6 +35,11 @@ PRESETS = {
                                call_active=True, call_from_unknown=True, call_duration_min=20, remote_access_app=True,
                                loan_issued_24h=False, recipient_account_age_days=60, recipient_unique_senders_7d=3,
                                session_duration_sec=200, prev_24h=0, client_tx_1h=0, is_night=False),
+    "🛒 Предоплата продавцу": dict(amount=60_000, is_new_recipient=True, recipient_pasted=True,
+                                   is_new_device=False, call_active=False, call_from_unknown=False,
+                                   call_duration_min=0, remote_access_app=False, loan_issued_24h=False,
+                                   recipient_account_age_days=1500, recipient_unique_senders_7d=1,
+                                   session_duration_sec=120, prev_24h=0, client_tx_1h=0, is_night=False),
     "📈 «Инвестиции» без звонка": dict(amount=150_000, is_new_recipient=True, recipient_pasted=True,
                                       is_new_device=False, call_active=False, call_from_unknown=False,
                                       call_duration_min=0, remote_access_app=False, loan_issued_24h=False,
@@ -59,7 +64,7 @@ st.title("📱 Глазами клиента")
 st.caption(f"Клиент: {CLIENT['name']}. Обычный перевод — {fmt_kzt(CLIENT['avg_amount'])}, "
            f"на счёте — {fmt_kzt(CLIENT['balance'])}.")
 
-cols = st.columns(len(PRESETS))
+cols = st.columns(4) + st.columns(4)
 for col, name in zip(cols, PRESETS):
     col.button(name, on_click=apply_preset, args=(name,), use_container_width=True,
                type="primary" if st.session_state.preset == name else "secondary")
@@ -137,7 +142,7 @@ with phone:
         .phone .ghost {{background:#f1f3f5;color:#111}}
         </style>
         <div class="phone">
-          <div class="top">Мобильный банк · перевод</div>
+          <div class="top">{T["header"]}</div>
           <div class="amt">{fmt_kzt(amount)}</div>
           <div class="card"><div class="ttl">{icon} {title}</div><div class="body">{body}</div>{extra}</div>
         </div>
