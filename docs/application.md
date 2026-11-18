@@ -36,6 +36,6 @@ Qorgan защищает клиентов банка от мошенников, �
 дроп-радар, методология. Код открыт, тесты включены.
 
 **Ссылки:**
-- Репозиторий: [ссылка на GitHub]
+- Репозиторий: https://github.com/alinaraevali18/qorgan-antifraud
 - Презентация: [ссылка на презентацию / PDF]
-- Демо: [ссылка на Streamlit Cloud]
+- Демо: https://qorgan-antifraud-knnai7fwmhudrcnfhmamal.streamlit.app/
