@@ -8,6 +8,8 @@ Qorgan замечает, что клиента **уговаривают** пер
 **«умной паузой»** на русском или казахском языке и находит **сети дропов**, через которые
 выводятся украденные деньги.
 
+**📑 Презентация:** [docs/Qorgan_ZhanLI_presentation.pdf](docs/Qorgan_ZhanLI_presentation.pdf)
+
 **▶️ Живое демо:** https://qorgan-antifraud-knnai7fwmhudrcnfhmamal.streamlit.app/
 
 ![Глазами клиента](docs/client.png)
@@ -119,4 +121,5 @@ tests/          проверки: нет утечек, модель лучше �
 
 ## Команда
 
-Соло-участник — исследователь. Хакатон: V региональный ITU Hackathon 2026, International Taraz University.
+**ZhanLI** — Раева Алина (КазНУ, Алматы), индивидуальное участие.
+V региональный ITU Hackathon 2026, International Taraz University.

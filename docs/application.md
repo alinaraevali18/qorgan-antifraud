@@ -1,5 +1,7 @@
 # Описание проекта для формы заявки
 
+**Команда:** ZhanLI — Раева Алина (КазНУ, Алматы), индивидуальное участие
+
 **Название:** Qorgan — антифрод против социальной инженерии и сетей дропов
 
 **Кейс:** Банк ЦентрКредит — «Инновации в банкинге и кибербезопасность»
@@ -37,5 +39,5 @@ Qorgan защищает клиентов банка от мошенников, �
 
 **Ссылки:**
 - Репозиторий: https://github.com/alinaraevali18/qorgan-antifraud
-- Презентация: [ссылка на презентацию / PDF]
+- Презентация: https://github.com/alinaraevali18/qorgan-antifraud/blob/main/docs/Qorgan_ZhanLI_presentation.pdf
 - Демо: https://qorgan-antifraud-knnai7fwmhudrcnfhmamal.streamlit.app/
